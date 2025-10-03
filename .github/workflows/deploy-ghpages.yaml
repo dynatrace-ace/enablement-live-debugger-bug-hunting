@@ -6,6 +6,7 @@ on:
   push:
     branches:
       - main
+      - reconnect
       - docs/*
   workflow_dispatch:
 jobs:
