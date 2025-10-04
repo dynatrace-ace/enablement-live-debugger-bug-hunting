@@ -59,6 +59,15 @@ activeGate:
         [debugging]
         debugging_enabled = true
 ```
+
+On newer Dynatrace Operator versions, it needs to be set like this:
+```yaml
+#Set debugging_enabled to true in the custom.properties file.
+activeGate:
+   capabilities:
+    - debugging
+```
+
 This is already set up for you in the codespaces automatically in the [Dynakube.yaml](https://github.com/dynatrace-wwse/enablement-live-debugger-bug-hunting/blob/main/.devcontainer/yaml/dynakube-skel.yaml) file so no need to restart the ActiveGate.
 
 ### 1.4 Enable Log Ingest
