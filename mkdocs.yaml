@@ -7,13 +7,13 @@ nav:
   - '3. Codespaces': codespaces.md
   - '4. Bug 1: Clear Completed':
       - Clear Completed: 1-bug-clear-completed.md
-      - 'Solution: Hunt via Kubernetes App': 1-bug-hunt-via-k8s.md
+      - '💡 Hunt via Kubernetes App': 1-bug-hunt-via-k8s.md
   - '5. Bug 2: Special Characters':
       - Special Characters: 2-bug-special-characters.md
-      - 'Solution: Hunt via Distributed Traces': 2-bug-hunt-via-tracing.md
+      - '💡 Hunt via Distributed Traces': 2-bug-hunt-via-tracing.md
   - '6. Bug 3: Duplicate Task':
       - Duplicate Task: 3-bug-duplicate-task.md
-      - 'Solution: Hunt via Logs': 3-bug-hunt-via-logs.md
+      - '💡 Hunt via Logs': 3-bug-hunt-via-logs.md
   - '7. Other Settings':
       - IDE Integration: ide-integration.md
       - Mask Sensitive Data: mask-data.md
