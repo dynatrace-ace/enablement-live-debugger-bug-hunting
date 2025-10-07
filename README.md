@@ -30,5 +30,5 @@ Do you want to become a Bugbuster? Is not only easy with Dynatrace to find bugs,
 In this tutorial we will embark a Bug Hunting journey learning the different features of the Live Debbuging Capabilities of the Dynatrace Plattform. We will live debug an application in Kubernetes setting non-breaking breakpoints. Join us in the bug hunting quest and become a Bugbuster! 
 
 Ready to start the journey? 
-## [🧳🐞 Start the hands-on training here!](https://dynatrace-wwse.github.io/enablement-live-debugger-bug-hunting)
+## [🧳🐞 Start the hands-on training here!](https://dynatrace-ace.github.io/enablement-live-debugger-bug-hunting)
 
