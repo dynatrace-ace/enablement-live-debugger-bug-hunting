@@ -865,7 +865,8 @@ generateDynakube(){
     DT_API_URL=$DT_TENANT$API
     
     # Read the actual hostname in case changed during instalation
-    CLUSTERNAME=$(hostname)
+    CLUSTERNAME="$(hostname)-$(cat /proc/sys/kernel/random/uuid | tr -d '-' | cut -c1-8)"
+    printInfo "ClusterName for Dynakube and ActiveGate: $CLUSTERNAME"
     export CLUSTERNAME
 
     ARM=false
