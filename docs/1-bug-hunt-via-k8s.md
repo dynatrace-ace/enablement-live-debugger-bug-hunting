@@ -113,13 +113,11 @@ Yay! we found the first bug!!!
     chmod +x redeploy-todoapp.sh
     ./redeploy-todoapp.sh
     ```
-
 <br>
 <details>
 <summary>💡 Hint</summary>
 
----
-##### Before
+Before
 ```javascript
 List<TodoRecord> todoStore = new ArrayList<>();
 logger.debug("todoStore size is {}", todoStore.size());
@@ -132,8 +130,7 @@ for (TodoRecord todoRecord : todos.getAll()) {
 }
 ```
 
----
-##### After
+After
 ```javascript
 //List<TodoRecord> todoStore = new ArrayList<>();
 //logger.debug("todoStore size is {}", todoStore.size());
@@ -146,7 +143,7 @@ for (TodoRecord todoRecord : todos.getAll()) {
     }
 }
 ```
----
+
 </details> 
 <br>
 

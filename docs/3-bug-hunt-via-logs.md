@@ -68,25 +68,21 @@ We've now successfully hunted down and taken care of another bug 🤩
     chmod +x redeploy-todoapp.sh
     ./redeploy-todoapp.sh
     ```
-
 <br>
 <details>
 <summary>💡 Hint</summary>
 
----
-##### Before
+Before
 ```javascript
 newTodoRecord.setId(tempTodoRecord.getTitle());
 newTodoRecord.setTitle(UUID.randomUUID().toString());
 ```
 
----
-##### After
+After
 ```javascript
 newTodoRecord.setId(UUID.randomUUID().toString());
 newTodoRecord.setTitle(tempTodoRecord.getTitle());
 ```
----
 </details> 
 <br>
 

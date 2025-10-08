@@ -27,26 +27,22 @@ Let's continue with the bug hunting again! Now, let's assume we are new develope
     chmod +x redeploy-todoapp.sh
     ./redeploy-todoapp.sh
     ```
-
 <br>
 <details>
 <summary>💡 Hint</summary>
 
----
-##### Before
+Before
 ```javascript
 String todoTitle = newTodoRecord.getTitle().replaceAll("[^a-zA-Z0-9\\s]+", "");
 newTodoRecord.setTitle(todoTitle);
 ```
 
----
-##### After
+After
 ```javascript
 //String todoTitle = newTodoRecord.getTitle().replaceAll("[^a-zA-Z0-9\\s]+", "");
 String todoTitle = newTodoRecord.getTitle();
 newTodoRecord.setTitle(todoTitle);
 ```
----
 </details> 
 <br>
 
