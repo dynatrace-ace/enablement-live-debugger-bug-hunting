@@ -7,6 +7,7 @@ on:
     branches:
       - main
       - docs/*
+  workflow_dispatch:
 jobs:
   deploy-github-pages:
     runs-on: ubuntu-24.04
@@ -21,6 +22,6 @@ jobs:
     - name: MKDocs - install requirements, build, gh-deploy
       run: | 
         pip install --break-system-packages -r docs/requirements/requirements-mkdocs.txt
+        git fetch origin gh-pages:gh-pages
         mkdocs build
-        mkdocs gh-deploy --remote-name origin --remote-branch gh-pages --force
-        
+        mkdocs gh-deploy        
