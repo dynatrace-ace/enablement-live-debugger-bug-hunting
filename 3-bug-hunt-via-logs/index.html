@@ -942,18 +942,15 @@ chmod<span class="w"> </span>+x<span class="w"> </span>redeploy-todoapp.sh
 <details>
 <summary>💡 Hint</summary>
 
----
-##### Before
+Before
 <div class="highlight"><pre><span></span><code><span class="nx">newTodoRecord</span><span class="p">.</span><span class="nx">setId</span><span class="p">(</span><span class="nx">tempTodoRecord</span><span class="p">.</span><span class="nx">getTitle</span><span class="p">());</span>
 <span class="nx">newTodoRecord</span><span class="p">.</span><span class="nx">setTitle</span><span class="p">(</span><span class="nx">UUID</span><span class="p">.</span><span class="nx">randomUUID</span><span class="p">().</span><span class="nx">toString</span><span class="p">());</span>
 </code></pre></div>
 
----
-##### After
+After
 <div class="highlight"><pre><span></span><code><span class="nx">newTodoRecord</span><span class="p">.</span><span class="nx">setId</span><span class="p">(</span><span class="nx">UUID</span><span class="p">.</span><span class="nx">randomUUID</span><span class="p">().</span><span class="nx">toString</span><span class="p">());</span>
 <span class="nx">newTodoRecord</span><span class="p">.</span><span class="nx">setTitle</span><span class="p">(</span><span class="nx">tempTodoRecord</span><span class="p">.</span><span class="nx">getTitle</span><span class="p">());</span>
 </code></pre></div>
----
 </details>
 <p><br></p>
 <div class="grid cards">
