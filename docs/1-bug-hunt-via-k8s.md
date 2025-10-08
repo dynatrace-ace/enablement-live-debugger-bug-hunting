@@ -98,13 +98,57 @@ Return to the Live Debugger and see the Snaphot captured, open it and see all th
 
 Do you see the bug? can you understand what happened and why the completed todos are not deleted? We can see two variables, the ``todos`` with a length of 3 and ``todoStore`` with a length of 0.
 
+!!! tip "Seeing is believing 🤩"
+    Did you notice? With Dynatrace we were able to navigate from the Kubernetes Cluster all the way down to the workload, it's traces cotinuing down to the specific method and namespace of the called function and variables. With one click on the method we were able to set a **non-breaking** breakpoint in our production application deployed in a Kubernetes Cluster where with a single snapshot we were able to identify the bug. Debugging Kubernetes Clusters has never been so easy!!! And in Production!! 🤯
+
 In line 84 ``todoStore.remove(todoRecord)`` the variable todoStore is a newly instantiated variable. This is a mistake, it should be replaced by the variable ``todos`` so the function can succesfully remove all cleared tasks!
 
 Yay! we found the first bug!!!
 
-!!! tip "Seeing is believing 🤩"
-    Did you notice? With Dynatrace we were able to navigate from the Kubernetes Cluster all the way down to the workload, it's traces cotinuing down to the specific method and namespace of the called function and variables. With one click on the method we were able to set a **non-breaking** breakpoint in our production application deployed in a Kubernetes Cluster where with a single snapshot we were able to identify the bug. Debugging Kubernetes Clusters has never been so easy!!! And in Production!! 🤯
+!!! example "Fix the bug 🪲🛠️"
+    Go back to your Codespace and find the source code for the `TodoController`. It should be under the following path: `app/src/main/java/com/dynatrace/todoapp/TodoController.java`. Once you apply the fix, run the following commands:
 
+    ```bash
+    cd /workspaces/enablement-live-debugger-bug-hunting
+    chmod +x redeploy-todoapp.sh
+    ./redeploy-todoapp.sh
+    ```
+
+<br>
+<details>
+<summary>💡 Hint</summary>
+
+---
+##### Before
+```javascript
+List<TodoRecord> todoStore = new ArrayList<>();
+logger.debug("todoStore size is {}", todoStore.size());
+for (TodoRecord todoRecord : todos.getAll()) {
+    if (todoRecord.isCompleted()) {
+        if (todoStore.remove(todoRecord)) {
+            logger.info("Removing Todo record: {}", todoRecord);
+        }
+    }
+}
+```
+
+---
+##### After
+```javascript
+//List<TodoRecord> todoStore = new ArrayList<>();
+//logger.debug("todoStore size is {}", todoStore.size());
+for (TodoRecord todoRecord : todos.getAll()) {
+    if (todoRecord.isCompleted()) {
+        //if (todoStore.remove(todoRecord)) {
+        if (todos.remove(todoRecord)) {
+            logger.info("Removing Todo record: {}", todoRecord);
+        }
+    }
+}
+```
+---
+</details> 
+<br>
 
 <div class="grid cards" markdown>
 - [Click here to continue the quest with the next Bug:octicons-arrow-right-24:](2-bug-special-characters.md)
