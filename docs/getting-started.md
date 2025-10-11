@@ -99,6 +99,13 @@ Kubernetes namespace name = todoapp
 
 Click on `Save changes`.
 
+**Enable log/trace enrichment**
+
+- Go to Settings > General monitoring settings > OneAgent features.
+   - Enable:
+      - Java - Trace/span context enrichment for logs [Opt-In].
+      - Java - Trace/span context enrichment for unstructured logs [Opt-In]
+
 ## 2. Create Dynatrace API Tokens for Kubernetes Observability
 This codespace has everything automated for you so you can focus on what matters which in this enablement is to learn about the Live Debugging capabilities of the Dynatrace Platform.  You'll need two tokens:
 

@@ -12,7 +12,7 @@
 
 ![Todo Workload](img/todo_workload.png)
 
-- On the Overview in the right hand side, scroll down and open the `Services` app.  Dynatrace groups telemetry from distributed traces and spans into "Services" for you!
+- On the Overview in the right hand side, go to the `App Services`  and open the `Services` app.  Dynatrace groups telemetry from distributed traces and spans into "Services" for you!
 
 ![Todo Services](img/todo_services.png)
 
@@ -55,7 +55,7 @@ Once you click next, no repository was found for this application (this is becau
 Why? we take security very seriously, meaning the source code will never leave the browser, the client. 
 
 
-- In organisation you enter: ``dynatrace-wwse``
+- In organisation you enter: ``dynatrace-ace``
 - In Repository you enter this repo: ``enablement-live-debugger-bug-hunting``
 
 ![Live Debugger App](img/ld_repo.png)
