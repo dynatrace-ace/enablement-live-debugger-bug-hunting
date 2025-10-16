@@ -7,10 +7,10 @@ nav:
   - '3. Bug 1: Clear Completed':
       - '> 🪲 Clear Complete': 1-bug-clear-completed.md
       - '> 💡 Hunt via Kubernetes App': 1-bug-hunt-via-k8s.md
-  - '(optional) 4. Bug 2: Special Characters':
+  - '4. Bug 2: Special Characters':
       - '🪲 Special Characters': 2-bug-special-characters.md
       - '💡 Hunt via Distributed Traces': 2-bug-hunt-via-tracing.md
-  - '(optional) 5. Bug 3: Duplicate Task':
+  - '5. Bug 3: Duplicate Task':
       - '🪲 Duplicate Task': 3-bug-duplicate-task.md
       - '💡 Hunt via Logs': 3-bug-hunt-via-logs.md
   - '6. Other Settings':
