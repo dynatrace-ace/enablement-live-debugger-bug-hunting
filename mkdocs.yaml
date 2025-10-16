@@ -4,22 +4,23 @@ repo_url: "https://github.com/dynatrace-ace/enablement-live-debugger-bug-hunting
 nav:
   - '1. About': index.md
   - '2. Getting Started': getting-started.md
-  - '3. Bug 1: Clear Completed':
+  - '3. Launch codespaces': codespaces.md
+  - '4. Bug 1: Clear Completed':
       - '🪲 Bug - Clear Complete': 1-bug-clear-completed.md
       - '💡 Hunt via Kubernetes App': 1-bug-hunt-via-k8s.md
-  - '4. Bug 2: Special Characters':
+  - '5. Bug 2: Special Characters':
       - '🪲  Bug - Special Characters': 2-bug-special-characters.md
       - '💡 Hunt via Distributed Traces': 2-bug-hunt-via-tracing.md
-  - '5. Bug 3: Duplicate Task':
+  - '6. Bug 3: Duplicate Task':
       - '🪲 Bug - Duplicate Task': 3-bug-duplicate-task.md
       - '💡 Hunt via Logs': 3-bug-hunt-via-logs.md
-  - '6. Other Settings':
+  - '7. Other Settings':
       - IDE Integration: ide-integration.md
       - Mask Sensitive Data: mask-data.md
       - Version Control: version-control.md
-  - '7. Cleanup': cleanup.md
-  - '8. Resources': resources.md
-  - "9. What's Next?": whats-next.md
+  - '8. Cleanup': cleanup.md
+  - '9. Resources': resources.md
+  - "10. What's Next?": whats-next.md
 theme:
   name: material
   custom_dir: docs/overrides
